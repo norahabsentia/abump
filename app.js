@@ -9,7 +9,7 @@ key:fs.readFileSync('./file.pem'), cert: fs.readFileSync('./file.crt')
 var server = require('http').Server(app);
 var map = {};
 server.listen(3000);
-server.timeout = 2400000;
+server.timeout = 2500000;
 //var io = require('socket.io')(server);
 var io = require('socket.io')(server);
 const fileUpload = require('express-fileupload');
